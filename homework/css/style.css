@@ -277,10 +277,9 @@ p {
 }
 
 footer {
-    display: block;
     width: 100%;
     height: 250px;
-    overflow: hidden;
+    clear: both;
     background: #333;
     color: white;
     text-align: center;
