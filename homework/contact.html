@@ -6,6 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fluke Shop</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .contact-form textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        .contact-form button {
+            margin-top: 20px;
+            width: 150px;
+            height: 45px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #218838;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,7 +67,32 @@
         </ul>
     </menu>
     <article>
-        <h1>Content</h1>
+        <div class="box-container" style="display: block;">
+            <h1 style="text-align: center;">ติดต่อเรา</h1>
+            <div class="box-contact" style="text-align: center;">
+                <p>PKL SHOP</p>
+                <p><strong>โทร </strong>: 088-888-8888</p>
+                <p><strong>Email :</strong> pklshop@gmail.com</p>
+                <p><strong>Facebook :</strong> PKL SHOP</p>
+                <p><strong> เวลาทำการ :</strong> ทุกวัน 24 ชั่วโมง</p>
+            </div>
+            <form class="contact-form" action="" method="post">
+                <label>ชื่อ-นามสกุล</label>
+                <input type="text" placeholder="ชื่อ-นามสกุล">
+
+                <label>อีเมล</label>
+                <input type="email" placeholder="example@email.com">
+
+                <label>หัวข้อ</label>
+                <input type="text" placeholder="หัวข้อ">
+
+                <label>ข้อความ</label>
+                <textarea placeholder="กรอกข้อความ"></textarea>
+
+                <button type="submit">ส่งข้อความ</button>
+
+            </form>
+        </div>
     </article>
     <footer>
         <div class="footer-info">
@@ -40,6 +101,7 @@
             <p>โทร : 088-888-8888</p>
             <p>Email : pklshop@gmail.com</p>
             <p>Facebook : PKL SHOP</p>
+            <p>&copy; 2026 PKL SHOP. All Rights Reserved.</p>
         </div>
     </footer>
 

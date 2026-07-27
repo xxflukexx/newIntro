@@ -285,6 +285,10 @@ footer {
     padding: 30px;
 }
 
+.contact{
+    
+}
+
 @media (max-width:768px) {
     menu {
         width: 100px;
