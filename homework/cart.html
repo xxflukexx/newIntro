@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluke Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <b>PENG</b>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าหลัก</a></li>
+            <li><a href="product.html">สินค้า</a></li>
+            <li><a href="cart.html">ตะกร้า</a></li>
+            <li><a href="confirm.html">ยืนยัน</a></li>
+            <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+    <menu>
+        <ul>
+            <li><a href="clothes.html">เสื้อผ้า</a></li>
+            <li><a href="shoes.html">รองเท้า</a></li>
+            <li><a href="bag.html">กระเป๋า</a></li>
+            <li><a href="devices.html">อุปกรณ์ไอที</a></li>
+            <li><a href="house.html">ของแต่งบ้าน</a></li>
+        </ul>
+    </menu>
+    <article>
+        <h1 style="padding: 20px;">ตระกร้าสินค้า</h1>
+        <div class="cart">
+            <table>
+                <tr>
+                    <th>ที่</th>
+                    <th>สินค้า</th>
+                    <th>รูป</th>
+                    <th>ราคา</th>
+                    <th>จำนวน</th>
+                    <th>รวม</th>
+                    <th>ลบ</th>
+                </tr>
+                <tr id="row1">
+                    <td>1</td>
+                    <td>เสื้อยืดสกรีนข้อความ</td>
+                    <td>
+                        <img src="img/clothe-3.jpg" style="width: 100px; height: 100px;">
+                    </td>
+                    <td>฿20</td>
+                    <td><input type="number" name="" id="qty" value="1" min="1"></td>
+                    <td id="sum">฿20</td>
+                    <td><button onclick="del()">ลบ</button></td>
+                </tr>
+            </table>
+            <div class="cart-bottom">
+                <a href="confirm.html"><button>ซื้อ</button></a>
+            </div>
+        </div>
+    </article>
+    <footer>
+        <div class="footer-info">
+            <h3>ติดต่อร้านค้า</h3>
+            <p>PKL SHOP</p>
+            <p>โทร : 088-888-8888</p>
+            <p>Email : pklshop@gmail.com</p>
+            <p>Facebook : PKL SHOP</p>
+        </div>
+    </footer>
+
+    <script>
+        qty = document.getElementById("qty")
+        sum = document.getElementById("sum")
+        qty.oninput = function () {
+            sum.innerHTML = "฿" + (qty.value * 20);
+        };
+        function del() {
+            document.getElementById("row1").remove();
+        }
+    </script>
+
+</body>
+
+</html>
