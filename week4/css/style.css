@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    flex-flow: wrap;
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
+}
+
+.item {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: chocolate;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.order1 {
+    order: 1;
+
+}
+
+.order2 {
+    order: 2;
+
+}
+
+.order3 {
+    order: 3;
+
+}
+
+.order4 {
+    order: 4;
+
+}
+
+.order5 {
+    order: 5;
+
+}
+
+.order6 {
+    order: 6;
+
+}

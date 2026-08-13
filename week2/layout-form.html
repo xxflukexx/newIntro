@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Form</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">Paris</a></li>
+                <li><a href="#">Tokyo</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <a href="layout.html">Go to Form</a>
+            <h1>กรอกข้อมูล</h1>
+
+            <form action="">
+                <label for="">ชื่อ : </label>
+                <input type="text" required><br>
+                <label for="">อีเมล : </label>
+                <input type="email" required><br>
+                <label for="">รหัสผ่าน : </label>
+                <input type="password" required><br>
+                <label for="">เบอร์โทรศัพท์ : </label>
+                <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+                <label for="">สีที่ชอบ : </label>
+                <input type="color" required><br>
+                <label for="">รูปภาพ : </label>
+                <input type="file" required><br>
+                <label for="">น้ำหนัก (กก.): </label>
+                <input type="number" min="30" max="300" required><br>
+                <label for="">ส่วนสูง (ซม.): </label>
+                <input type="number" min="50" max="300" required><br>
+                <label for="">วันเกิด : </label>
+                <input type="date" required><br>
+                <label for="">เวลาตกฟาก : </label>
+                <input type="time" required><br>
+                <label for="">สาขา : </label><br>
+                <input type="radio" name="major" value="IT">
+                <label for=""> : IT </label><br>
+                <input type="radio" name="major" value="ITI">
+                <label for=""> : ITI </label><br>
+                <input type="radio" name="major" value="ITT">
+                <label for=""> : ITT </label><br>
+                <input type="radio" name="major" value="INE">
+                <label for=""> : INE </label><br>
+                <input type="radio" name="major" value="INET">
+                <label for=""> : INET </label><br>
+                <label for="">วิชาที่ชอบ : </label><br>
+                <input type="checkbox" name="com-pro" value="com-pro">
+                <label for=""> : COM-PRO </label><br>
+                <input type="checkbox" name="intro" value="intro">
+                <label for=""> : INTRO </label><br>
+                <input type="checkbox" name="english" value="english">
+                <label for=""> : ENGLISH </label><br>
+                <input type="submit" value="ส่งข้อมูล">
+                <input type="reset" value="ยกเลิก">
+            </form>
+        </article>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+
+</body>
+
+</html>
