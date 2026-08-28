@@ -1,0 +1,14 @@
+router>enable
+router>configure terminal
+router(config)#hostname R1
+router(config)#no ip domain-lookup
+router(config)#interface gi0/1
+router(config)#ip address 192.168.122.1 255.255.255.192
+router(config)#no shutdown
+router(config)#interface se 0/0/0
+router(config-if)#ip address 192.168.122.161 255.255.255.224
+router(config-if)#clock rate 64000
+router(config-if)#no shutdowm
+router(config)#ip route 192.168.122.64 255.255.255.192 se0/0/0
+router(config)#end 
+R1>wr
